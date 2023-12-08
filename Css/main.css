@@ -254,13 +254,13 @@ header nav ul {
         left: 0;
     }
 
-    header nav ul li a {
+    header nav ul li {
         padding: 15px !important;
     }
 
 }
 
-header nav ul li a {
+header nav ul li {
     display: block;
     position: relative;
     color: var(--First-color);
@@ -279,9 +279,10 @@ header nav ul li a {
     -ms-border-radius: var(--border-radius-hover);
     -o-border-radius: var(--border-radius-hover);
     padding: 10px 10px;
+    cursor: pointer;
 }
 
-header nav ul li a:hover {
+header nav ul li:hover {
     color: var(--Second-color);
     background-color: var(--background-color-hover);
 }
@@ -673,3 +674,43 @@ footer .content-footer p span a {
 }
 
 /* End Footer */
+/* Start Arrow */
+.arrow {
+    position: relative;
+}
+
+.arrow .up {
+    position: fixed;
+    color: var(--First-color);
+    right: 20px;
+    bottom: 80px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: var(--transition-page);
+    -webkit-transition: var(--transition-page);
+    -moz-transition: var(--transition-page);
+    -ms-transition: var(--transition-page);
+    -o-transition: var(--transition-page);
+}
+
+.arrow .down {
+    position: fixed;
+    color: var(--First-color);
+    right: 20px;
+    bottom: 40px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: var(--transition-page);
+    -webkit-transition: var(--transition-page);
+    -moz-transition: var(--transition-page);
+    -ms-transition: var(--transition-page);
+    -o-transition: var(--transition-page);
+}
+
+.arrow .up:hover,
+.arrow .down:hover {
+    color: var(--Second-color);
+    opacity: 0.7;
+}
+
+/* End Arrow */
