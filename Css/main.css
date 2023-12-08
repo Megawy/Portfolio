@@ -294,6 +294,7 @@ header nav ul li a:hover {
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
+    background-color: var(--background-color-3);
 }
 
 .landing .container {
